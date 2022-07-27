@@ -26,8 +26,17 @@ string[] FillNewArrey(string[] array, string[]newArrey){
     return newArrey;
 }
 
+void PrintNewArray(string[]newArr){
+
+    for(int i = 0; i < newArr.Length; i++){
+        Console.Write($"{newArr[i]} ");
+    }
+
+}
+
 
 string[] array = {"hello", "2", "world", ":-)", "hi", "help", "good", "we"};
-string[] newArr = CreateNewArray(array);
+string[] newArrey = CreateNewArray(array);
 
-FillNewArrey(array, newArr);
+FillNewArrey(array, newArrey);
+PrintNewArray(newArrey);
